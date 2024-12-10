@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">1</a></li>
+          <li><a href="2.html">2</a></li>
+          <li><a href="3.html">3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <input type="hidden" name="q" value="search" />
+        <p>
+          Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H
+          и радиусом основания R. Определить, поместится ли жидкость объёма M в
+          первую ёмкость, во вторую, в обе.
+          <input
+            type="hidden"
+            name="problem"
+            value="Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H..."
+          />
+        </p>
+        <p>
+          A:
+          <input class="A" type="number" required min="0" name="A" />
+        </p>
+        <p>
+          H:
+          <input class="H" type="number" required min="0" name="H" />
+        </p>
+        <p>
+          R:
+          <input class="R" type="number" required min="0" name="R" />
+        </p>
+        <p>
+          M:
+          <input class="M" type="number" required min="0" name="M" />
+        </p>
+        <button type="button" onclick="answer()">Ответ</button>
+        <button type="submit">Отправить</button>
+        <div>
+          <span class="result">Ответ:</span>
+          <input class="hiddenResult" type="hidden" name="result" />
+        </div>
+      </form>
+    </main>
+    <script src="../scripts/app3.js"></script>
+  </body>
+</html>
